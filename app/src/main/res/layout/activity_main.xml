@@ -6,42 +6,63 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="406dp"
-        android:layout_height="58dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Ingrese Nombre"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="254dp" />
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnIngresar"
         android:layout_width="229dp"
         android:layout_height="54dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="427dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="250dp"
         android:text="Ingresar"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="358dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/campoNombre"
         android:layout_width="404dp"
         android:layout_height="58dp"
+        android:layout_marginTop="304dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Ingrese su DPI"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <EditText
+        android:id="@+id/campoDPI"
+        android:layout_width="406dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="164dp"
+        android:ems="10"
+        android:inputType="number|textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="153dp"
+        android:layout_marginEnd="368dp"
+        android:layout_marginBottom="559dp"
+        android:text="DPI"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="156dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <FrameLayout
-        android:layout_width="409dp"
-        android:layout_height="154dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
-
-    </FrameLayout>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="306dp"
+        android:layout_marginBottom="406dp"
+        android:text="Nombre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
